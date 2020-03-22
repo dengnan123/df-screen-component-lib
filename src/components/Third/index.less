@@ -1,0 +1,173 @@
+@label-color: #9598a5;
+@label-value: #c7cad5;
+
+@circle-color1: #64dabd; // 数据颜色绿
+@circle-color2: #da5e5e; // 数据颜色红
+
+@font-size12: 12px; // 小号字
+@font-color12: #9598a5; // 小号字颜色
+
+.content {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  margin-right: 20px;
+  padding-left: 20px;
+  justify-content: space-between;
+  > div {
+    margin-bottom: 30px;
+  }
+  > div > :first-child {
+    color: #fff;
+    font-size: 12px;
+  }
+  .first {
+    > :last-child {
+      display: flex;
+      margin-top: 20px;
+      padding-right: 20px;
+      justify-content: space-between;
+      .thirdPro {
+        width: 15.4px;
+        height: 66px;
+        border-radius: 2.2px;
+        background-color: @circle-color1;
+      }
+      .fourPro {
+        width: 15.4px;
+        height: 38.5px;
+        border-radius: 2.2px;
+        background-color: @circle-color2;
+      }
+    }
+  }
+
+  .secondTitle {
+    padding-bottom: 20px;
+  }
+
+  // .third {
+  //   .nowEnvi {
+  //     padding-bottom: 15px;
+  //   }
+  // }
+
+  .fourTitle {
+    padding-bottom: 15px;
+  }
+
+  .usageTips {
+    p {
+      text-align: center;
+      color: #fff;
+      padding-top: 80px;
+    }
+  }
+}
+
+.tablehearder {
+  background: rgba(0, 0, 0, 0);
+}
+
+.table {
+  line-height: 30px;
+  :global {
+    .ant-table-thead > tr {
+      background: #b9c3d911;
+      > th {
+        color: @label-color;
+      }
+    }
+    .ant-table-tbody > tr > td {
+      border-bottom: 0px;
+      color: @label-value;
+    }
+    .ant-table-tbody > tr:hover:not(.ant-table-expanded-row) > td {
+      background: #19273c;
+      color: @label-color;
+    }
+    .ant-table-thead > tr > th {
+      border-bottom: 0px;
+      background: #b9c3d911;
+    }
+  }
+  .odd {
+    background: rgba(14 28 50, 0.98);
+    color: #fff;
+  }
+  .even {
+    background: #b9c3d911;
+    color: #fff;
+  }
+}
+
+.green {
+  width: 90px;
+  .usageRate {
+    color: @font-color12;
+    font-size: @font-size12;
+    display: inline-block;
+    padding-top: 10px;
+    width: 100%;
+    text-align: center;
+  }
+}
+
+.red {
+  width: 90px;
+  .usageRate {
+    color: @font-color12;
+    font-size: @font-size12;
+    display: inline-block;
+    padding-top: 10px;
+    width: 100%;
+    text-align: center;
+  }
+  :global {
+    .ant-progress-text {
+      color: @circle-color2;
+      font-size: 16px;
+    }
+  }
+}
+
+.numberLine {
+  width: 20px;
+  height: 100px;
+  // height: 100%;
+  color: #fff;
+  position: relative;
+  .numberGreenBox,
+  .numberRedBox {
+    width: 100%;
+    left: 0;
+    bottom: 10px;
+    position: absolute;
+    border-radius: 4px;
+  }
+
+  .number {
+    display: block;
+    width: 30px;
+    margin-top: -20px;
+    margin-left: -5px;
+    text-align: center;
+  }
+  .name {
+    position: absolute;
+    left: 50%;
+    bottom: -28px;
+    width: 50px;
+    margin-left: -25px;
+    text-align: center;
+    display: block;
+    font-size: 12px;
+    color: @font-color12;
+  }
+  .numberGreenBox {
+    background: @circle-color1;
+  }
+  .numberRedBox {
+    background: @circle-color2;
+  }
+}

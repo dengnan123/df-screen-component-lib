@@ -1,0 +1,72 @@
+{
+  "name": "df-screen-component-lib",
+  "version": "1.0.0",
+  "description": "df大屏组件库",
+  "main": "lib/index.js",
+  "module": "es/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "npx --max_old_space_size=8096 father doc dev --host 0.0.0.0",
+    "build": "father build",
+    "build:doc": "father doc build",
+    "deploy": "father doc deploy",
+    "precommit": "lint-staged"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dengnan123/df-screen-component-lib.git"
+  },
+  "author": "dany",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dengnan123/df-screen-component-lib/issues"
+  },
+  "homepage": "https://github.com/dengnan123/df-screen-component-lib#readme",
+  "dependencies": {
+    "@umijs/hooks": "^1.6.2",
+    "antd": "^3.26.12",
+    "axios": "^0.19.2",
+    "classnames": "^2.2.6",
+    "concurrently": "^5.1.0",
+    "echarts": "^4.6.0",
+    "echarts-for-react": "^2.0.15-beta.1",
+    "echarts-gl": "^1.1.1",
+    "express-api-bootstrap": "2.0.3",
+    "father": "^2.29.2",
+    "fengmap": "^2.3.2",
+    "js-cookie": "^2.2.1",
+    "lodash": "^4.17.15",
+    "masonry-layout": "^4.2.2",
+    "monaco-editor": "^0.20.0",
+    "monaco-editor-webpack-plugin": "^1.9.0",
+    "nodemon": "^2.0.2",
+    "react": "^16.8.6",
+    "react-color": "^2.18.0",
+    "react-dnd": "^10.0.2",
+    "react-dnd-html5-backend": "^10.0.2",
+    "react-dom": "^16.8.6",
+    "react-fengmap": "2.9.5",
+    "react-fengmap-screen-component": "0.0.2-5",
+    "react-input-color": "^2.0.29",
+    "react-masonry-component": "^6.2.1",
+    "react-masonry-css": "^1.0.14",
+    "react-monaco-editor": "^0.34.0",
+    "react-rnd": "^10.1.6",
+    "replace-in-file": "^5.0.2",
+    "safe-reaper": "^2.0.0",
+    "use-force-update": "^1.0.7",
+    "uuid": "^3.4.0",
+    "@babel/runtime": "^7.9.2",
+    "babel-plugin-import": "^1.12.2"
+  },
+  "devDependencies": {
+    "@babel/runtime": "^7.9.2",
+    "babel-plugin-import": "^1.12.2"
+  },
+  "browserslist": [
+    "defaults",
+    "not IE 11",
+    "not IE_Mob 11",
+    "maintained node versions"
+  ]
+}
