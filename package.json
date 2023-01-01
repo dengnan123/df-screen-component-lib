@@ -38,7 +38,7 @@
     "lodash": "^4.17.15",
     "masonry-layout": "^4.2.2",
     "monaco-editor": "^0.20.0",
-    "monaco-editor-webpack-plugin": "^1.9.0",
+    "monaco-editor-webpack-plugin": "^7.0.1",
     "nodemon": "^2.0.2",
     "react": "^16.8.6",
     "react-color": "^2.18.0",
